@@ -1,4 +1,5 @@
 package br.edu.up.modelos;
+
 import br.edu.up.util.Prompt;
 
 public class Vendedor {
@@ -8,11 +9,9 @@ public class Vendedor {
     private double salarioFixo;
     private double totalVendas;
 
-    //metodos
+    // metodos
 
-    
-
-    public double comissao(){
+    public double comissao() {
         return totalVendas * 0.15;
     }
 
@@ -20,30 +19,29 @@ public class Vendedor {
         return nome;
     }
 
-    public void setNome() {
-        this.nome = Prompt.lerLinha("Nome do vendedor: ");
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public double getSalarioFixo() {
         return salarioFixo;
     }
 
-    public void setSalarioFixo() {
-        this.salarioFixo = Prompt.lerDecimal("Salário fixo: ");
+    public void setSalarioFixo(double salarioFixo) {
+        this.salarioFixo = salarioFixo;
     }
 
     public double getTotalVendas() {
         return totalVendas;
     }
 
-    public void setTotalVendas() {
-        this.totalVendas = Prompt.lerDecimal("Total de vendas mensal: ");
+    public void setTotalVendas(double totalVendas) {
+        this.totalVendas = totalVendas;
     }
 
-    public String toString(){
+    public String toString() {
         return "Nome: " + nome + "\n" +
                 "Salário fixo: " + salarioFixo + "\n" +
                 "Salário total: " + (comissao() + salarioFixo);
     }
 }
-

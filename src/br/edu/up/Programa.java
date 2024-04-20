@@ -1,9 +1,9 @@
 package br.edu.up;
+
 import br.edu.up.util.Prompt;
 import br.edu.up.controles.*;
 
 public class Programa {
-
 
     public static void main(String[] args) {
         int numero = Prompt.lerInteiro("Digite o Numero do Exercicio: ");
@@ -58,40 +58,39 @@ public class Programa {
 
             case 13:
                 Exercicio13.executar();
-                break;    
-                
+                break;
+
             case 14:
                 Exercicio14.executar();
                 break;
 
             case 15:
                 Exercicio15.executar();
-                break; 
+                break;
 
             case 16:
                 Exercicio16.executar();
-                break; 
-                
+                break;
+
             case 17:
                 Exercicio17.executar();
-                break; 
-                            
+                break;
+
             case 18:
                 Exercicio18.executar();
-                break; 
-            
+                break;
+
             case 19:
                 Exercicio19.executar();
-                break; 
+                break;
 
-                            
             case 20:
                 Exercicio20.executar();
-                break; 
+                break;
 
             case 21:
                 Exercicio21.executar();
-                break; 
+                break;
 
             case 22:
                 Exercicio22.executar();
@@ -99,19 +98,19 @@ public class Programa {
 
             case 23:
                 Exercicio23.executar();
-                break; 
+                break;
 
             case 24:
                 Exercicio24.executar();
-                break; 
+                break;
 
             case 25:
                 Exercicio25.executar();
-                break;     
+                break;
 
             case 26:
                 Exercicio26.executar();
-                break;  
+                break;
 
             default:
                 Prompt.imprimir("Número inválido");
